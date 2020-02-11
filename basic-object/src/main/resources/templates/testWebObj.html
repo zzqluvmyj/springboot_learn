@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>testWebObj</title>
+</head>
+<body>
+    <div>
+        <span th:text="${#request.getAttribute('name1')}"></span>
+        <span th:text="${#session.getAttribute('name2')}"></span>
+        <span th:text="${#servletContext.getAttribute('name3')}"></span>
+    </div>
+</body>
+</html>

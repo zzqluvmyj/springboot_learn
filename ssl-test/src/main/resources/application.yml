@@ -1,0 +1,7 @@
+server:
+  port: 8442
+  ssl:
+    key-store: classpath:sslTest.key.store
+    key-store-password: 123456
+    key-password: 123456
+

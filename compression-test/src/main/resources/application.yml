@@ -1,0 +1,7 @@
+server:
+  compression:
+    enabled: true
+    min-response-size: 1
+    # 压缩的阈值，此处极限，表示大于1字节就会压缩，默认2048字节
+    mime-types:
+      text/html,text/xml,text/plain,text/css,text/javascript,application/javascript

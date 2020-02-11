@@ -1,0 +1,17 @@
+server:
+  tomcat:
+    basedir: my-tomcat-log
+    accesslog:
+      pattern: 'ip: %A, response code: %s, time: %t'
+      enabled: true
+      directory: logs
+      buffered: false
+      # 线上环境中应该缓冲
+      encoding: utf-8
+
+spring:
+  banner:
+    chartset: utf-8
+    image:
+      location: classpath:taiji.jpg
+      invert: false

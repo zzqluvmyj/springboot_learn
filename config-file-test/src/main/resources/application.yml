@@ -1,0 +1,18 @@
+
+spring:
+  profiles:
+    active: mysql
+# 根据不同的profile激活不同的配置,active表示激活此profile
+jdbc:
+  driver:
+    com.mysql.jdbc.Driver
+
+---
+
+spring:
+  profiles: oracle
+
+jdbc:
+  driver:
+    oracle.jdbc.driver.OracleDriver
+
